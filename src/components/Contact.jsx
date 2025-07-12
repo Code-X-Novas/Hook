@@ -10,6 +10,9 @@ const ContactForm = () => {
         budget: "",
     });
 
+    const [hasScrolledUp, setHasScrolledUp] = useState(false);
+
+
     const contactFormRef = useRef(null);
 
     // Scroll to bottom on load
@@ -23,14 +26,19 @@ const ContactForm = () => {
     // Click outside to scroll to top
     useEffect(() => {
         const handleClickOutside = (event) => {
-        if (contactFormRef.current && !contactFormRef.current.contains(event.target)) {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            if (
+                !hasScrolledUp &&
+                contactFormRef.current &&
+                !contactFormRef.current.contains(event.target)
+            ) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setHasScrolledUp(true); // prevent future scrolls
+            }
         }
-    };
 
-    document.addEventListener('mousedown', handleClickOutside);
+        document.addEventListener('mousedown', handleClickOutside);
         return () => document.removeEventListener('mousedown', handleClickOutside);
-    }, []);
+    }, [hasScrolledUp]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
