@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: 'RF Dewi';
-    src: url('./assets/fonts/RFDewi-Regular.ttf') format('truetype');
+    font-family: "RF Dewi";
+    src: url("./assets/fonts/RFDewi-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -22,5 +22,20 @@
 } */
 
 .font-rfdewi {
-    font-family: 'RF Dewi', sans-serif;
+    font-family: "RF Dewi", sans-serif;
+}
+
+@keyframes slide-infinite {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-infinite-scroll {
+    animation: slide-infinite 20s linear infinite;
+    display: flex;
+    width: fit-content;
 }

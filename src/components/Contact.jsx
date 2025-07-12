@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { ImFacebook2 } from "react-icons/im";
-import { FaInstagram, FaLinkedin, FaBehanceSquare  } from "react-icons/fa";
+import React, { useState, useEffect, useRef } from "react";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -11,6 +9,28 @@ const ContactForm = () => {
         city: "",
         budget: "",
     });
+
+    const contactFormRef = useRef(null);
+
+    // Scroll to bottom on load
+    useEffect(() => {
+        window.scrollTo({ 
+            top: document.body.scrollHeight, 
+            behavior: 'smooth' 
+        });
+    }, []);
+
+    // Click outside to scroll to top
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+        if (contactFormRef.current && !contactFormRef.current.contains(event.target)) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, []);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -24,11 +44,12 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="px-4 my-16 md:py-20 max-w-4xl mx-auto font-rfdewi">
+        <div ref={contactFormRef} className="px-4 mt-16 md:pt-20 pt-5 max-w-4xl mx-auto font-rfdewi">
             <h2 className="text-2xl md:text-[40px] mb-10 font-extrabold underline text-center">
                 Contact Us Form
             </h2>
 
+            {/* form */}
             <form
                 onSubmit={handleSubmit}
                 className="bg-white p-6 md:p-10 border-[2px] border-gray-300 shadow"
@@ -134,28 +155,6 @@ const ContactForm = () => {
                     Book Free Consultation Call
                 </button>
             </form>
-
-            {/* Footer */}
-            <footer className="text-center mt-12">
-                <div className="mt-10 text-sm text-gray-700">Stay in touch</div>
-                <div className="flex justify-center gap-6 mt-4 text-xl">
-                    <a href="#">
-                        <ImFacebook2 />
-                    </a>
-                    <a href="#">
-                        <FaInstagram />
-                    </a>
-                    <a href="#">
-                        <FaBehanceSquare  />
-                    </a>
-                    <a href="#">
-                        <FaLinkedin />
-                    </a>
-                </div>
-                <p className="text-xs text-gray-600 mt-4">
-                    Copyright 2025 - All right Reserved by Winz Infotech
-                </p>
-            </footer>
         </div>
     );
 };

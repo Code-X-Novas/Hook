@@ -6,7 +6,8 @@ import Include from "./components/Include";
 import Page from "./components/Page";
 import Results from "./components/Result";
 import Testimonial from "./components/Testimonials";
-import Trust from "./components/Trust";
+import SideShow from "./components/SideShow";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -17,11 +18,12 @@ function App() {
             <Groth />
             <Include />
             <Testimonial />
-            <Trust />
+            <SideShow />
             <Results />
 
             <GrowthFAQ />
             <ContactForm />
+            <Footer />
         </div>
     );
 }

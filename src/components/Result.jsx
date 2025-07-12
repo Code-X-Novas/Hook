@@ -40,7 +40,7 @@ const Results = () => {
 
             {/* Consultation Section */}
             <div className="max-w-7xl mx-auto my-6 py-12 px-4">
-                <div className=" text-center border border-gray-300 p-8">
+                <div className=" text-center border-2 border-gray-300 p-8">
                     <h2 className="text-2xl md:text-[40px] font-extrabold underline mb-4">
                         Claim Your FREE 1-on-1 Growth Consultation
                     </h2>
