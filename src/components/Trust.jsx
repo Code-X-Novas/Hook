@@ -32,7 +32,7 @@ const Trust = () => {
     }, []);
 
     return (
-        <div className="w-full bg-gray-100 py-12 px-4">
+        <div className="w-full bg-[#F2F2F2] py-12 px-4">
             <h2 className="text-2xl md:text-3xl font-bold underline text-center mb-8">
                 PROOFS & TRUST
             </h2>

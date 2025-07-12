@@ -1,51 +1,53 @@
 const Results = () => {
     return (
-        <div className="w-full font-sans">
+        <div className="w-full font-rfdewi">
             {/* Results Section */}
-            <div className="bg-orange-500 text-white py-10 px-4">
-                <h2 className="text-2xl md:text-3xl font-bold text-center underline mb-8">
-                    🚀 Proven Results That Drive Growth
+            <div className="bg-[#FC8A10] text-white py-10 px-4">
+                <h2 className="text-2xl sm:text-[40px] tracking-wide text-black font-extrabold underline my-8 text-center">
+                    Results That Speak for Themselves
                 </h2>
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto text-center">
-                    <div>
-                        <p className="text-3xl font-bold">83%</p>
-                        <p className="mt-2 text-sm">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl md:my-16 my-10 mx-auto text-center">
+                    <div className="max-w-[250px]">
+                        <p className="md:text-4xl text-3xl md:font-bold font-semibold sm:my-0 my-2">83%</p>
+                        <br className="hidden sm:flex" />
+                        <p className="md:font-bold font-semibold md:text-2xl">
                             Increase in booked consultations within 90 days
                         </p>
                     </div>
-                    <div>
-                        <p className="text-3xl font-bold">2X</p>
-                        <p className="mt-2 text-sm">
-                            More patient inquiries via Google & WhatsApp
+                    <div className="max-w-[220px]">
+                        <p className="md:text-4xl text-3xl md:font-bold font-semibold sm:my-0 my-2">2X</p>
+                        <br className="hidden sm:flex" />
+                        <p className="md:font-bold font-semibold md:text-2xl">
+                            patient inquiries via Google & WhatsApp
                         </p>
                     </div>
-                    <div>
-                        <p className="text-3xl font-bold">70%</p>
-                        <p className="mt-2 text-sm">
-                            Recovery of “lost” leads using AI follow-up scripts
+                    <div className="max-w-[250px]">
+                        <p className="md:text-4xl text-3xl md:font-bold font-semibold sm:my-0 my-2">70%</p>
+                        <br className="hidden sm:flex" />
+                        <p className="md:font-bold font-semibold md:text-2xl">
+                            Follow-up recovery from "lost" leads using AI scriptss
                         </p>
                     </div>
-                    <div>
-                        <p className="text-3xl font-bold">40+</p>
-                        <p className="mt-2 text-sm">
-                            New 5-star Google reviews in just 2 months
+                    <div className="max-w-[250px]">
+                        <p className="md:text-4xl text-3xl md:font-bold font-semibold sm:my-0 my-2">40+</p>
+                        <br className="hidden sm:flex" />
+                        <p className="md:font-bold font-semibold md:text-2xl">
+                            5-star Google reviews added in under 2 Months
                         </p>
                     </div>
                 </div>
             </div>
 
             {/* Consultation Section */}
-            <div className="bg-gray-50 py-12 px-4">
-                <div className="max-w-3xl mx-auto text-center border border-gray-300 p-8 rounded-md shadow-md">
-                    <h2 className="text-2xl md:text-3xl font-bold underline mb-4">
-                        🎯 Claim Your FREE 1-on-1 Growth Consultation
+            <div className="max-w-7xl mx-auto my-6 py-12 px-4">
+                <div className=" text-center border border-gray-300 p-8">
+                    <h2 className="text-2xl md:text-[40px] font-extrabold underline mb-4">
+                        Claim Your FREE 1-on-1 Growth Consultation
                     </h2>
-                    <p className="mb-6 text-gray-700">
-                        We’ll analyze your current system, pinpoint where you’re
-                        losing patients, and provide a fast-action growth
-                        strategy.
+                    <p className="md:mb-5 mb-2 text-gray-700 md:text-[22px] text-base font-semibold max-w-[550px] mx-auto">
+                        We'll audit your current system, show where you're losing patients, and give you a fast-action strategy.
                     </p>
-                    <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded transition duration-300">
+                    <button className="bg-[#FC8A10] translate-y-5 hover:bg-orange-500 md:text-2xl text-base text-white font-semibold sm:py-4 py-2 sm:px-6 px-4 mb-4">
                         Book Free Consultation Call
                     </button>
                 </div>

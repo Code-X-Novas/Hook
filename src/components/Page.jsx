@@ -9,7 +9,7 @@ const Page = () => {
                     But your clinic still depends on referrals and random
                     walk-ins.
                 </p>
-                <button className="bg-[#FC8A10] sm:my-10 my-2 hover:bg-orange-600 md:text-2xl text-base text-white font-semibold sm:py-4 py-2 sm:px-6 px-4 mb-4">
+                <button className="bg-[#FC8A10] sm:my-10 my-2 hover:bg-orange-500 md:text-2xl text-base text-white font-semibold sm:py-4 py-2 sm:px-6 px-4 mb-4">
                     Book Free Consultation Call
                 </button>
                 <p className="text-sm sm:text-xl font-bold max-w-[750px] mx-auto">

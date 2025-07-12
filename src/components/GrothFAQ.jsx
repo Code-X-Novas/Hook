@@ -4,24 +4,32 @@ import { FiChevronDown } from "react-icons/fi";
 const faqData = [
     {
         question: "Will this work for my specific clinic or specialty?",
-        answer: "Absolutely. We tailor our strategies to fit the unique needs of your clinic or specialty, ensuring maximum impact and ROI.",
+        answer: "Yes, whether you're a dentist, dermatologist, gynecologist, general physician, or specialist clinic, we customize everything to fit your practice type, city, and ideal patient profile.",
     },
     {
         question: "I don’t want to run ‘salesy’ or unethical ads.",
-        answer: "We focus on ethical marketing practices that build trust and long-term relationships with your patients, never resorting to pushy or misleading tactics.",
+        answer: "Neither do we. We follow a 100% ethical, patient-first approach no false claims, no fear-based marketing. Your reputation and ethics stay intact.",
     },
     {
         question:
             "I’m already listed on Practo or JustDial – isn’t that enough?",
-        answer: "While directories help, they don’t replace a comprehensive growth engine. Our solution captures and converts leads directly from multiple channels.",
+        answer: "Those platforms list hundreds of doctors. Our system pulls patients directly to you through performance marketing, content, and automated follow-ups not generic directories.",
     },
     {
         question: "How much time will this take from me?",
-        answer: "We handle the heavy lifting. You’ll only need to allocate a brief onboarding session and periodic check-ins, nothing more.",
+        answer: "Less than 1 hour a week. Everything is done-for-you setup, content, automation, ads, and tracking. You stay focused on patients, we handle the rest.",
     },
     {
         question: "I have staff. Why do I need automation?",
-        answer: "Automation complements your team by reducing manual follow-ups and minimizing missed opportunities, letting your staff focus on patient care.",
+        answer: "Even the best staff can forget callbacks, misplace leads, or delay responses. Our system ensures every inquiry gets a response instantly even on Sundays or at 10 PM.",
+    },
+    {
+        question: "What if I don’t get results?",
+        answer: "We offer transparent performance reports and clear ROI tracking. If you don't see results in 90 days, we pause everything and work with you to fix it no questions asked.",
+    },
+    {
+        question: "I don’t understand tech. Will I be able to use this?",
+        answer: "Absolutely. You don't need to log in or manage anything. You'll get a simple mobile report and alerts. We manage the system end-to-end you just get leads and bookings",
     },
 ];
 
@@ -33,34 +41,38 @@ const GrowthFAQ = () => {
     };
 
     return (
-        <div className="w-full font-sans px-4 py-8 md:py-12">
-            <h2 className="text-2xl md:text-3xl font-bold underline text-center mb-6">
+        <div className="w-full font-rfdewi px-4">
+            <h2 className="text-2xl md:text-[40px] font-extrabold underline text-center mb-6">
                 Frequently Asked Questions
             </h2>
-            <div className="max-w-3xl mx-auto space-y-4">
+
+            <div className="max-w-[820px] mx-auto space-y-4">
                 {faqData.map((item, idx) => (
                     <div
                         key={idx}
-                        className="bg-white shadow rounded overflow-hidden"
+                        className="bg-white drop-shadow-lg overflow-hidden"
                     >
                         <button
-                            className="w-full text-left px-5 py-4 flex items-center justify-between focus:outline-none"
+                            className="w-full text-left md:px-10 px-3 md:py-12 py-5 flex items-center justify-between focus:outline-none"
                             onClick={() => toggleFAQ(idx)}
                         >
-                            <span className="text-base md:text-lg font-medium">
+                            <span className="text-sm md:text-xl font-bold">
                                 {item.question}
                             </span>
-                            <FiChevronDown
-                                className={`transform transition-transform duration-300 ${
-                                    openIndex === idx
-                                        ? "rotate-180"
-                                        : "rotate-0"
-                                }`}
-                                size={24}
-                            />
+                            <div className="md:size-10 rounded-full bg-white justify-center flex items-center drop-shadow-xl ">
+                                <FiChevronDown
+                                    className={`transform cursor-pointer transition-transform duration-300 ${
+                                        openIndex === idx
+                                            ? "rotate-180"
+                                            : "rotate-0"
+                                    }`}
+                                    size={24}
+                                />
+                            </div>
+
                         </button>
                         {openIndex === idx && (
-                            <div className="px-5 pb-4 text-gray-700">
+                            <div className="md:px-10 px-3 md:pb-4 pb-2 md:text-base text-xs -translate-y-2 text-gray-700">
                                 {item.answer}
                             </div>
                         )}
