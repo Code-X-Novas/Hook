@@ -1,10 +1,16 @@
 function Groth() {
     return (
         <section className="bg-white px-4 py-12 text-center font-sans">
-            <p className="text-lg sm:text-xl max-w-3xl mx-auto mb-8">
+            
+            <p className="text-lg sm:text-3xl max-w-[940px] mx-auto mb-8 font-bold">
                 You didn't become a doctor to chase leads. But in today's world
                 if you're not visible online, you don't exist.
             </p>
+
+            {/* horizontal line */}
+            <div className="w-full relative my-12">
+                <img src="/line.png" alt="" />
+            </div>
 
             <div className="border border-gray-400 rounded-md overflow-hidden max-w-5xl mx-auto flex flex-col md:flex-row text-left">
                 <div className="bg-orange-500 text-white p-6 md:w-1/3 flex items-center justify-center">

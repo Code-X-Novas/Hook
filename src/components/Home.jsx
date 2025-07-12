@@ -21,10 +21,10 @@ export default function ClinicPromo() {
                     />
                 </h1>
 
-                <div className="my-2 text-xl sm:text-3xl md:text-[40px] font-extrabold underline">
+                <div className="my-2 text-lg sm:text-3xl md:text-[40px] font-extrabold underline">
                     Dear Doctors, Medical Professionals & Clinic Owners
                 </div>
-                <p className="text-xl sm:text-4xl mt-5 font-semibold">
+                <p className="text-lg sm:text-4xl mt-5 font-semibold">
                     Get 3X More Patient Bookings in Just 90 Days
                 </p>
                 <p className="text-lg sm:text-3xl mt-2 font-semibold">
@@ -40,6 +40,19 @@ export default function ClinicPromo() {
                         alt="Doctors"
                         className="w-full h-full object-cover"
                     />
+                    <div className="absolute inset-0 flex flex-col md:flex-row items-center justify-center gap-8 p-4">
+                        <button className="bg-[#FC8A10] rounded-full p-2 sm:p-4 md:p-6 ">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="white"
+                                viewBox="0 0 24 24"
+                                className="w-5 h-5 sm:w-10 sm:h-10 md:w-16 md:h-16"
+                            >
+                            <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>
