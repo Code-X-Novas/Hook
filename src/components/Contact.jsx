@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import flag from "../assets/icons/flag.png"; 
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -90,18 +91,26 @@ const ContactForm = () => {
                     <label className="block md:text-xl font-semibold mb-1">
                         Contact number
                     </label>
-                    <div className="flex items-center gap-2">
-                        <span className="text-xl">🇮🇳 +</span>
+                    <div className="flex items-center gap-2 border-[2px] border-gray-300 rounded-md overflow-hidden">
+                        <div className="flex items-center pl-2 pr-1 gap-1">
+                        <img 
+                            src={flag} 
+                            alt="flag" 
+                            className="h-5 w-7 object-cover"
+                        />
+                        <span className="text-sm md:text-base md:mx-2 mx-1 font-semibold"> +</span>
+                        </div>
                         <input
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleChange}
-                            className="w-full border-[2px] border-gray-300 md:p-4 p-2"
-                            type="tel"
-                            required
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        className="w-full p-2 md:p-4 outline-none"
+                        type="tel"
+                        required
                         />
                     </div>
                 </div>
+
 
                 <div className="md:mb-10 mb-4">
                     <label className="block md:text-xl font-semibold mb-1">
@@ -148,7 +157,7 @@ const ContactForm = () => {
                                     type="radio"
                                     name="budget"
                                     value={option}
-                                    className="md:scale-150"
+                                    className="md:scale-150 accent-black"
                                     checked={formData.budget === option}
                                     onChange={handleChange}
                                 />

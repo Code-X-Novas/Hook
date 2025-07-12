@@ -15,7 +15,7 @@ function Groth() {
             {/* whole text */}
             <div className="border-[2px] md:p-5 md:space-x-4 border-gray-400 overflow-hidden max-w-[1200px] mx-auto flex flex-col md:flex-row text-left">
                 {/* orange left wala */}
-                <div className="bg-[url(/Rectangle-147.png)] md:bg-contain bg-no-repeat text-white md:px-5 md:pt-6  p-4 md:w-[25%] flex md:justify-start justify-center">
+                <div className="bg-[url(/Rectangle-147.png)] md:bg-contain bg-no-repeat text-white md:px-5 md:pt-6 p-4 md:w-[25%] flex justify-start">
                     <div>
                         <p className="font-semibold text-lg md:text-2xl">The Solution:</p>
                         <h3 className="text-2xl md:text-4xl font-bold mt-2">
