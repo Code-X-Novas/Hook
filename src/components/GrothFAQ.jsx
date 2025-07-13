@@ -50,7 +50,7 @@ const GrowthFAQ = () => {
                 {faqData.map((item, idx) => (
                     <div
                         key={idx}
-                        className="bg-white drop-shadow-lg overflow-hidden"
+                        className="bg-white drop-shadow-lg overflow-y-auto"
                     >
                         <button
                             className="w-full text-left md:px-10 px-3 md:py-12 py-5 flex items-center justify-between focus:outline-none"

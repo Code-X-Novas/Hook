@@ -13,16 +13,18 @@ const ContactForm = () => {
 
     const [hasScrolledUp, setHasScrolledUp] = useState(false);
 
-
     const contactFormRef = useRef(null);
 
-    // Scroll to bottom on load
     useEffect(() => {
-        window.scrollTo({ 
-            top: document.body.scrollHeight, 
-            behavior: 'smooth' 
-        });
+        const timeout = setTimeout(() => {
+            if (contactFormRef.current) {
+            contactFormRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        }, 500); // ⏱ Wait to ensure DOM height is ready on mobile
+
+        return () => clearTimeout(timeout);
     }, []);
+
 
     // Click outside to scroll to top
     useEffect(() => {
@@ -30,7 +32,8 @@ const ContactForm = () => {
             if (
                 !hasScrolledUp &&
                 contactFormRef.current &&
-                !contactFormRef.current.contains(event.target)
+                !contactFormRef.current.contains(event.target) && 
+                window.innerWidth > 768 // ✅ only for desktop
             ) {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 setHasScrolledUp(true); // prevent future scrolls
@@ -110,7 +113,6 @@ const ContactForm = () => {
                         />
                     </div>
                 </div>
-
 
                 <div className="md:mb-10 mb-4">
                     <label className="block md:text-xl font-semibold mb-1">
