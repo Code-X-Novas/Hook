@@ -53,7 +53,7 @@ const GrowthFAQ = () => {
                         className="bg-white drop-shadow-lg overflow-y-auto"
                     >
                         <button
-                            className="w-full text-left md:px-10 px-3 md:py-12 py-5 flex items-center justify-between focus:outline-none"
+                            className="w-full text-left md:px-8 px-3 md:py-8 py-5 flex items-center justify-between focus:outline-none"
                             onClick={() => toggleFAQ(idx)}
                         >
                             <span className="text-sm md:text-xl font-bold">

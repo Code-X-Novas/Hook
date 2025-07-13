@@ -25,9 +25,9 @@ const Page = () => {
 
             <section className="text-center md:py-5 py-3 px-4 sm:px-8 max-w-[1200px] mx-auto">
                 <h2 className="text-lg sm:text-3xl md:text-[40px] font-extrabold underline mb-4">
-                    The Real Problem: It’s Not Just “Marketing”
+                    You’re Tired of:
                 </h2>
-                <p className="md:text-2xl text-lg font-bold mb-8 md:my-8 my-5">You’re tired of:</p>
+                <p className="md:text-2xl text-lg font-bold mb-8 md:my-8 my-5"></p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 md:gap-x-20 md:gap-y-10">
                     <div className="border-l-4 border-[#FC8A10] bg-gray-50 p-4 text-left rounded">
