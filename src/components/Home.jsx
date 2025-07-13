@@ -41,7 +41,7 @@ export default function ClinicPromo() {
                     Dear Doctors, Medical Professionals & Clinic Owners
                 </div>
                 <p className="text-xl sm:text-4xl mt-5 font-semibold leading-tight">
-                    Get 3X More Patient Bookings in Just 90 Days
+                    Get 3X More Patient Bookings <br className="sm:hidden block" /> in Just 90 Days
                 </p>
                 <p className="text-lg sm:text-2xl mt-1 font-semibold leading-snug">
                     with Patient Growth Engine

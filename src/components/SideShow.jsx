@@ -25,8 +25,8 @@ const SideShow = () => {
     const repeatedTestimonials = [...testimonials, ...testimonials]; // To loop seamlessly
 
     return (
-        <div className="bg-[#F2F2F2] py-16 overflow-hidden font-rfdewi">
-            <h2 className="lg:text-[42px] sm:text-3xl text-2xl font-extrabold tracking-tight text-center mb-12 underline">
+        <div className="bg-[#F2F2F2] md:py-16 py-10 overflow-hidden font-rfdewi">
+            <h2 className="lg:text-[42px] sm:text-3xl text-xl font-extrabold tracking-tight text-center md:mb-12 mb-8 underline">
                 PROOFS & TRUST
             </h2>
 
