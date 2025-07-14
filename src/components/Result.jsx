@@ -1,4 +1,11 @@
+import { PopupButton } from 'react-calendly';
+
 const Results = () => {
+
+    // const handleClick = () => {
+    //     console.log("clicked");
+    // }
+
     return (
         <div className="w-full font-rfdewi">
             {/* Results Section */}
@@ -47,9 +54,18 @@ const Results = () => {
                     <p className="md:mb-5 mb-2 text-gray-700 md:text-[22px] text-base font-semibold max-w-[550px] mx-auto">
                         We'll audit your current system, show where you're losing patients, and give you a fast-action strategy.
                     </p>
-                    <button className="bg-[#FC8A10] translate-y-5 hover:bg-orange-500 md:text-2xl text-base text-white font-semibold sm:py-4 py-2 sm:px-6 px-4 mb-4">
-                        Book Free Consultation Call
-                    </button>
+                    <PopupButton
+                        url="https://calendly.com/nabinagrawal64/30min" 
+                        rootElement={document.getElementById("root")} 
+                        text="Book Free Consultation Call" 
+                        className="bg-[#FC8A10] cursor-pointer translate-y-5 hover:bg-orange-500 md:text-2xl text-base text-white font-semibold sm:py-4 py-2 sm:px-6 px-4 mb-4"
+
+                        pageSettings={{
+                            backgroundColor: 'FFF8F2', // Example: Match your button's background color
+                            primaryColor: '#0BB6D3',    // Example: White for primary action elements (e.g., confirm button)
+                            textColor: 'FFFFF',       // Example: A common dark grey for text
+                        }}
+                    />
                 </div>
             </div>
         </div>
@@ -57,3 +73,5 @@ const Results = () => {
 };
 
 export default Results;
+
+// https://calendly.com/nabinagrawal64/30min
