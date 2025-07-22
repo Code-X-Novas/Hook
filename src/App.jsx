@@ -8,8 +8,10 @@ import Results from "./components/Result";
 import Testimonial from "./components/Testimonials";
 import SideShow from "./components/SideShow";
 import Footer from "./components/Footer";
+import useGA4 from "./hooks/useGA4";
 
 function App() {
+    useGA4();
 
     return (
         <div>

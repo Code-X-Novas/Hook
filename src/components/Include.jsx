@@ -1,4 +1,5 @@
 function Include() {
+
     const items = [
         {
             title: "Lead Generation",
@@ -36,6 +37,12 @@ function Include() {
         },
     ];
 
+    const handleBookNowClick = () => {
+        if (window.fbq) {
+            window.fbq('track', 'Consultation');
+        }
+    };
+
     return (
         <section className="bg-white px-4 py-8 font-rfdewi text-center font-sans">
             <h2 className="text-2xl sm:text-[42px] tracking-tight font-extrabold underline mb-8">
@@ -72,7 +79,7 @@ function Include() {
             </div>
             
             {/* button */}
-            <button className="bg-[#FC8A10] sm:my-10 my-2 hover:bg-orange-500 md:text-2xl text-base text-white font-semibold sm:py-4 py-2 sm:px-6 px-4 mb-4">
+            <button onClick={handleBookNowClick} className="bg-[#FC8A10] cursor-pointer sm:my-10 my-2 hover:bg-orange-500 md:text-2xl text-base text-white font-semibold sm:py-4 py-2 sm:px-6 px-4 mb-4">
                 Book Free Consultation Call
             </button>
 
