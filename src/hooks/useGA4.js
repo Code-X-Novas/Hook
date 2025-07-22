@@ -1,7 +1,7 @@
 // src/hooks/useGA4.ts (or .js if you're not using TypeScript)
 import { useEffect } from "react";
 
-const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
+const GA_MEASUREMENT_ID = "G-9955LW454F";
 
 const useGA4 = () => {
     useEffect(() => {
