@@ -1,6 +1,6 @@
 const Page = () => {
     return (
-        <div className="font-rfdewi">
+        <div>
             <section className="text-center px-4 sm:px-8 max-w-4xl mx-auto mb-12">
                 <button className="bg-[#FC8A10] sm:mb-10 mb-4 hover:bg-orange-500 md:text-2xl text-base text-white font-semibold sm:py-4 py-2 sm:px-6 px-4 ">
                     Book Free Consultation Call

@@ -7,22 +7,9 @@
     font-style: normal;
 }
 
-/* @font-face {
-    font-family: 'RF Dewi';
-    src: url('./assets/fonts/RFDewi-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'RF Dewi';
-    src: url('./assets/fonts/RFDewi-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-} */
-
-.font-rfdewi {
-    font-family: "RF Dewi", sans-serif;
+:root {
+    --font-primary: "RF Dewi", sans-serif;
 }
 
 @keyframes slide-infinite {

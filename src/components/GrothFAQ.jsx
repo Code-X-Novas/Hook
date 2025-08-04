@@ -41,7 +41,7 @@ const GrowthFAQ = () => {
     };
 
     return (
-        <div className="w-full font-rfdewi px-4">
+        <div className="w-full px-4">
             <h2 className="text-2xl md:text-[40px] font-extrabold underline text-center mb-6">
                 Frequently Asked Questions
             </h2>

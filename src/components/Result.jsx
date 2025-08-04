@@ -7,7 +7,7 @@ const Results = () => {
     // }
 
     return (
-        <div className="w-full font-rfdewi">
+        <div className="w-full">
             {/* Results Section */}
             <div className="bg-[#FC8A10] text-white py-10 px-4">
                 <h2 className="text-2xl sm:text-[40px] tracking-wide text-black font-extrabold underline my-8 text-center">

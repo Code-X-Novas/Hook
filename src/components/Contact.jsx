@@ -56,7 +56,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div ref={contactFormRef} className="px-4 mt-16 md:pt-20 pt-5 max-w-4xl mx-auto font-rfdewi">
+        <div ref={contactFormRef} className="px-4 mt-16 md:pt-20 pt-5 max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-[40px] mb-10 font-extrabold underline text-center">
                 Contact Us Form
             </h2>

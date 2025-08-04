@@ -1,6 +1,6 @@
 function Groth() {
     return (
-        <section className="bg-white px-4 py-12 text-center font-rfdewi">
+        <section className="bg-white px-4 py-12 text-center">
             
             <p className="text-[15px] sm:text-xl md:text-2xl lg:text-3xl max-w-[940px] mx-auto md:mb-8 mb-6 font-bold">
                 You didn't become a doctor to chase leads. But in today's world

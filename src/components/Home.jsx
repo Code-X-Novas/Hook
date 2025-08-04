@@ -16,7 +16,7 @@ export default function ClinicPromo() {
     };
 
     return (
-        <div className="font-rfdewi bg-gradient-to-b from-orange-100 to-white px-4 py-8 text-center">
+        <div className="bg-gradient-to-b from-orange-100 to-white px-4 py-8 text-center">
 
             <header className="mb-8">
 

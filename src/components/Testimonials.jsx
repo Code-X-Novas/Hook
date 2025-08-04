@@ -53,8 +53,7 @@ function Testimonial() {
     };
 
     return (
-        <div className="font-rfdewi">
-
+        <div>
             {/* what client say about us */}
             <section className="px-4 text-center">
                 <h2 className="text-xl sm:text-2xl lg:text-5xl font-bold underline mb-10 md:mb-20">

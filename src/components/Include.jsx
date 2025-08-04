@@ -44,7 +44,7 @@ function Include() {
     };
 
     return (
-        <section className="bg-white px-4 py-8 font-rfdewi text-center font-sans">
+        <section className="bg-white px-4 py-8 text-center">
             <h2 className="text-2xl sm:text-[42px] tracking-tight font-extrabold underline mb-8">
                 What's Included ?
             </h2>
