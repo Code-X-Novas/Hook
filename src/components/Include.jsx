@@ -68,7 +68,7 @@ function Include() {
                             <h3 className="font-bold text-lg sm:text-3xl my-3 underline">
                                 {item.title}
                             </h3>
-                            <ul className="list-disc pl-7 text-sm sm:text-xl font-semibold space-y-2">
+                            <ul className="list-disc pl-7 text-sm sm:text-xl space-y-2">
                                 {item.points.map((point, i) => (
                                     <li key={i}>{point}</li>
                                 ))}
