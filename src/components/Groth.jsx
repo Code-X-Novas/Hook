@@ -33,12 +33,12 @@ function Groth() {
                         Designed for Doctors Who Want Peace of Mind and a Full
                         Calendar
                     </h3>
-                    <p className="text-[13px] sm:text-base md:text-sm lg:text-lg xl:text-xl md:font-semibold lg:leading-6 mb-2">
+                    <p className="text-[13px] sm:text-base md:text-sm lg:text-lg xl:text-xl lg:leading-6 mb-2">
                         We're not just a marketing agency. We're your Growth
                         Partner building a plug-and-play system that attracts,
                         nurtures, and books patients without chaos or burnout.
                     </p>
-                    <p className="text-[13px] sm:text-base md:text-sm lg:text-lg xl:text-xl md:font-semibold lg:leading-6 mb-2">
+                    <p className="text-[13px] sm:text-base md:text-sm lg:text-lg xl:text-xl lg:leading-6 mb-2">
                         Our system works silently while you're in surgery or on
                         rounds, filling tomorrow’s calendar with qualified
                         patients.
