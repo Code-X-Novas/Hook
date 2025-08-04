@@ -35,7 +35,7 @@ const Page = () => {
                         <div className="md:w-2/3 w-1/2 -translate-y-2 h-1">
                             <img src="/line.png" alt="" className="h-0.5" />
                         </div>
-                        <p className="text-xs font-semibold md:text-xl max-w-[480px] text-slate-800">
+                        <p className="text-xs md:text-xl max-w-[480px] text-slate-800">
                             Instead of serving them, you're constantly worrying
                             about where the next patient will come from.
                         </p>
@@ -46,7 +46,7 @@ const Page = () => {
                         <div className="md:w-1/2 w-1/3 -translate-y-2 h-1">
                             <img src="/line.png" alt="" className="h-0.5" />
                         </div>
-                        <p className="text-xs font-semibold md:text-xl max-w-[480px] text-slate-800">
+                        <p className="text-xs md:text-xl max-w-[480px] text-slate-800">
                             Your team has difficulty explaining your services
                             and converting inquiries into appointments.
                         </p>
@@ -59,7 +59,7 @@ const Page = () => {
                         <div className="md:w-full w-4/5 -translate-y-2 h-1">
                             <img src="/line.png" alt="" className="h-0.5" />
                         </div>
-                        <p className="text-xs font-semibold md:text-xl max-w-[480px] text-slate-800">
+                        <p className="text-xs md:text-xl max-w-[480px] text-slate-800">
                             They're getting more patients just because they're
                             more visible online.
                         </p>
@@ -70,7 +70,7 @@ const Page = () => {
                         <div className="md:w-3/5 w-2/5 -translate-y-2 h-1">
                             <img src="/line.png" alt="" className="h-0.5" />
                         </div>
-                        <p className="text-xs font-semibold md:text-xl max-w-[480px] text-slate-800">
+                        <p className="text-xs md:text-xl max-w-[480px] text-slate-800">
                             Because no one followed up with potential patients
                             who showed interest.
                         </p>
