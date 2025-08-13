@@ -149,7 +149,7 @@ const ContactForm = () => {
                         {[
                             "Less than INR 50000",
                             "INR 50000 to INR 1 Lac",
-                            "INR 1 Lac to INR 3 Lacs",
+                            "INR 1 Lacs to INR 3 Lacs",
                             "INR 3 Lacs to INR 5 Lacs",
                             "INR 5 Lacs to INR 10 Lacs",
                         ].map((option, i) => (
