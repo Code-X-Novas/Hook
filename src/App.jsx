@@ -35,7 +35,7 @@ function App() {
     }, []);
 
     return (
-        <div>
+        <div className="font-[var(--font-primary)]">
             <ClinicPromo />
             <Page />
             <Groth />

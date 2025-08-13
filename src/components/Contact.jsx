@@ -169,7 +169,7 @@ const ContactForm = () => {
                 </div>
 
                 {/* button */}
-                <button className="bg-[#FC8A10] sm:mt-10 mt-4 hover:bg-orange-500 md:text-2xl text-base text-white font-semibold sm:py-4 py-2 sm:px-6 px-4 mb-4">
+                <button className="bg-[#FC8A10] cursor-pointer sm:mt-10 mt-4 hover:bg-orange-500 md:text-2xl text-base text-white font-semibold sm:py-4 py-2 sm:px-6 px-4 mb-4">
                     Book Free Consultation Call
                 </button>
             </form>
